@@ -8,7 +8,7 @@ class NavBar extends React.Component{
   render(){
 
     return(
-      <div>
+
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#">COVID-19 México</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -16,14 +16,15 @@ class NavBar extends React.Component{
             <Nav className="mr-auto">
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">Estados</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
+              {/*
+              <Nav.Link eventKey={1} href="#about">
                 Acerca de
-                </Nav.Link>
+                </Nav.Link>*/
+                }
             </Nav>
           </Navbar.Collapse>
       </Navbar>
-      </div>  
+
     );
   }
 

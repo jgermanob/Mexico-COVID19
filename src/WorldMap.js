@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './App.css';
 import worlddata from './world';
-import { geoMercator, geoPath } from 'd3-geo';
+import * as d3 from 'd3';
 
 
 /*
@@ -14,6 +12,7 @@ https://react-bootstrap.github.io/components/overlays/#popovers
 https://github.com/react-bootstrap/react-bootstrap/issues/1622
 https://www.w3schools.com/howto/howto_js_popup.asp
 */
+
 
 class WorldMap extends Component {
 
@@ -70,7 +69,7 @@ class WorldMap extends Component {
 
   render() {
      var w = this.state.wMap,h = this.state.hMap;
-     const projection = geoMercator()
+     const projection = d3.geoMercator()
      .center([-110, 22])
      .translate([w / 2, h / 1.7])
      .scale([w / .3]);
@@ -89,7 +88,7 @@ class WorldMap extends Component {
      }
 
 
-     const pathGenerator = geoPath().projection(projection);
+     const pathGenerator = d3.geoPath().projection(projection);
      const states = worlddata.features
         .map((d,i) => <path
         key={'path' + i}
@@ -102,13 +101,12 @@ class WorldMap extends Component {
         />);
 
   return(
-    <Container>
-    <svg width={this.state.wSvg} height={this.state.hSvg}>
-    <g>
-      {states}
-    </g>
-    </svg>
-    </Container>
+
+    <div className='d-flex justify-content-center'>
+      <svg width={this.state.wSvg} height={this.state.hSvg}>
+        {states}
+        </svg>
+    </div>
 
 
   );}

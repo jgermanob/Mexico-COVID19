@@ -10,9 +10,8 @@ class Cards extends React.Component{
   render(){
     return(
 
-      <Container style={{ padding: '40px' }}>
-        <Row>
-          <Col>
+        <Row >
+          <Col className='d-flex justify-content-center'>
           <Card style={{ width: '18rem' }}>
             <Card.Body>
               <Card.Title>Card Title {window.innerWidth}</Card.Title>
@@ -27,7 +26,7 @@ class Cards extends React.Component{
           </Card>
           </Col>
 
-          <Col>
+          <Col className='d-flex justify-content-center'>
           <Card style={{ width: '18rem' }}>
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
@@ -42,7 +41,7 @@ class Cards extends React.Component{
           </Card>
           </Col>
 
-          <Col>
+          <Col className='d-flex justify-content-center'>
           <Card style={{ width: '18rem' }}>
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
@@ -57,7 +56,6 @@ class Cards extends React.Component{
           </Card>
           </Col>
         </Row>
-      </Container>
 
     );
   }
