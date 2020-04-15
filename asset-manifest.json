@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Mexico-COVID19/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/Mexico-COVID19/static/js/main.af8e233b.chunk.js",
+    "main.js.map": "/Mexico-COVID19/static/js/main.af8e233b.chunk.js.map",
+    "runtime-main.js": "/Mexico-COVID19/static/js/runtime-main.ac2cebaf.js",
+    "runtime-main.js.map": "/Mexico-COVID19/static/js/runtime-main.ac2cebaf.js.map",
+    "static/css/2.de424728.chunk.css": "/Mexico-COVID19/static/css/2.de424728.chunk.css",
+    "static/js/2.a5616ddc.chunk.js": "/Mexico-COVID19/static/js/2.a5616ddc.chunk.js",
+    "static/js/2.a5616ddc.chunk.js.map": "/Mexico-COVID19/static/js/2.a5616ddc.chunk.js.map",
+    "index.html": "/Mexico-COVID19/index.html",
+    "precache-manifest.8feef3f43a723ff022eb118a09644238.js": "/Mexico-COVID19/precache-manifest.8feef3f43a723ff022eb118a09644238.js",
+    "service-worker.js": "/Mexico-COVID19/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/Mexico-COVID19/static/css/2.de424728.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/Mexico-COVID19/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.a5616ddc.chunk.js.LICENSE.txt": "/Mexico-COVID19/static/js/2.a5616ddc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac2cebaf.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.a5616ddc.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.af8e233b.chunk.js"
+  ]
+}
