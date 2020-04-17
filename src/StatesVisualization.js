@@ -5,6 +5,7 @@ import worlddata from './world';
 import NavBar from './NavBar';
 import Footer from './Footer'
 import Container from 'react-bootstrap/Container';
+import TweetsCard from './TweetsCard';
 
 function getStatesNames(){
     var states_names = [];
@@ -45,9 +46,15 @@ class StatesVisualization extends React.Component{
                                 ))}
                             </DropdownButton>
                         </div>
+                        <br/>
                         <div className='d-flex justify-content-center'>
                                 <h1>{this.state.selectedOption}</h1>
                         </div>
+                        <br/>
+                        <div className='d-flex justify-content-center'>
+                                <h3>Tweets en la entidad</h3>
+                        </div>
+                        <TweetsCard/>
                     </div>
                 </Container>
                 <Footer/>
